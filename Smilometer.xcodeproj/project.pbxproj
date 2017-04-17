@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5618FF201EA58DC500822A68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618FF1F1EA58DC500822A68 /* AppDelegate.swift */; };
+		5618FF221EA58DC500822A68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618FF211EA58DC500822A68 /* ViewController.swift */; };
+		5618FF251EA58DC500822A68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5618FF231EA58DC500822A68 /* Main.storyboard */; };
+		5618FF271EA58DC500822A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5618FF261EA58DC500822A68 /* Assets.xcassets */; };
+		5618FF2A1EA58DC500822A68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5618FF281EA58DC500822A68 /* LaunchScreen.storyboard */; };
+		5618FF351EA58DC500822A68 /* SmilometerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618FF341EA58DC500822A68 /* SmilometerTests.swift */; };
+		5618FF401EA58DC500822A68 /* SmilometerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618FF3F1EA58DC500822A68 /* SmilometerUITests.swift */; };
+		5618FF451EA58DC500822A68 /* Smilometer WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5618FF441EA58DC500822A68 /* Smilometer WatchKit App.app */; };
+		5618FF4B1EA58DC500822A68 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5618FF491EA58DC500822A68 /* Interface.storyboard */; };
+		5618FF4D1EA58DC500822A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5618FF4C1EA58DC500822A68 /* Assets.xcassets */; };
+		5618FF541EA58DC500822A68 /* Smilometer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5618FF531EA58DC500822A68 /* Smilometer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5618FF5B1EA58DC500822A68 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618FF5A1EA58DC500822A68 /* InterfaceController.swift */; };
+		5618FF5D1EA58DC500822A68 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618FF5C1EA58DC500822A68 /* ExtensionDelegate.swift */; };
+		5618FF5F1EA58DC500822A68 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618FF5E1EA58DC500822A68 /* NotificationController.swift */; };
+		5618FF611EA58DC500822A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5618FF601EA58DC500822A68 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5618FF311EA58DC500822A68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5618FF141EA58DC400822A68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5618FF1B1EA58DC400822A68;
+			remoteInfo = Smilometer;
+		};
+		5618FF3C1EA58DC500822A68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5618FF141EA58DC400822A68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5618FF1B1EA58DC400822A68;
+			remoteInfo = Smilometer;
+		};
+		5618FF461EA58DC500822A68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5618FF141EA58DC400822A68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5618FF431EA58DC500822A68;
+			remoteInfo = "Smilometer WatchKit App";
+		};
+		5618FF551EA58DC500822A68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5618FF141EA58DC400822A68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5618FF521EA58DC500822A68;
+			remoteInfo = "Smilometer WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5618FF681EA58DC500822A68 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5618FF541EA58DC500822A68 /* Smilometer WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5618FF6C1EA58DC500822A68 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5618FF451EA58DC500822A68 /* Smilometer WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5618FF1C1EA58DC400822A68 /* Smilometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smilometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5618FF1F1EA58DC500822A68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5618FF211EA58DC500822A68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5618FF241EA58DC500822A68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5618FF261EA58DC500822A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5618FF291EA58DC500822A68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5618FF2B1EA58DC500822A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5618FF301EA58DC500822A68 /* SmilometerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmilometerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5618FF341EA58DC500822A68 /* SmilometerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmilometerTests.swift; sourceTree = "<group>"; };
+		5618FF361EA58DC500822A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5618FF3B1EA58DC500822A68 /* SmilometerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmilometerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5618FF3F1EA58DC500822A68 /* SmilometerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmilometerUITests.swift; sourceTree = "<group>"; };
+		5618FF411EA58DC500822A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5618FF441EA58DC500822A68 /* Smilometer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smilometer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5618FF4A1EA58DC500822A68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5618FF4C1EA58DC500822A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5618FF4E1EA58DC500822A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5618FF531EA58DC500822A68 /* Smilometer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Smilometer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5618FF591EA58DC500822A68 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5618FF5A1EA58DC500822A68 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5618FF5C1EA58DC500822A68 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5618FF5E1EA58DC500822A68 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5618FF601EA58DC500822A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5618FF621EA58DC500822A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5618FF191EA58DC400822A68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5618FF2D1EA58DC500822A68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5618FF381EA58DC500822A68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5618FF501EA58DC500822A68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5618FF131EA58DC400822A68 = {
+			isa = PBXGroup;
+			children = (
+				5618FF1E1EA58DC400822A68 /* Smilometer */,
+				5618FF331EA58DC500822A68 /* SmilometerTests */,
+				5618FF3E1EA58DC500822A68 /* SmilometerUITests */,
+				5618FF481EA58DC500822A68 /* Smilometer WatchKit App */,
+				5618FF571EA58DC500822A68 /* Smilometer WatchKit Extension */,
+				5618FF1D1EA58DC400822A68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5618FF1D1EA58DC400822A68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5618FF1C1EA58DC400822A68 /* Smilometer.app */,
+				5618FF301EA58DC500822A68 /* SmilometerTests.xctest */,
+				5618FF3B1EA58DC500822A68 /* SmilometerUITests.xctest */,
+				5618FF441EA58DC500822A68 /* Smilometer WatchKit App.app */,
+				5618FF531EA58DC500822A68 /* Smilometer WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5618FF1E1EA58DC400822A68 /* Smilometer */ = {
+			isa = PBXGroup;
+			children = (
+				5618FF1F1EA58DC500822A68 /* AppDelegate.swift */,
+				5618FF211EA58DC500822A68 /* ViewController.swift */,
+				5618FF231EA58DC500822A68 /* Main.storyboard */,
+				5618FF261EA58DC500822A68 /* Assets.xcassets */,
+				5618FF281EA58DC500822A68 /* LaunchScreen.storyboard */,
+				5618FF2B1EA58DC500822A68 /* Info.plist */,
+			);
+			path = Smilometer;
+			sourceTree = "<group>";
+		};
+		5618FF331EA58DC500822A68 /* SmilometerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5618FF341EA58DC500822A68 /* SmilometerTests.swift */,
+				5618FF361EA58DC500822A68 /* Info.plist */,
+			);
+			path = SmilometerTests;
+			sourceTree = "<group>";
+		};
+		5618FF3E1EA58DC500822A68 /* SmilometerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5618FF3F1EA58DC500822A68 /* SmilometerUITests.swift */,
+				5618FF411EA58DC500822A68 /* Info.plist */,
+			);
+			path = SmilometerUITests;
+			sourceTree = "<group>";
+		};
+		5618FF481EA58DC500822A68 /* Smilometer WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5618FF491EA58DC500822A68 /* Interface.storyboard */,
+				5618FF4C1EA58DC500822A68 /* Assets.xcassets */,
+				5618FF4E1EA58DC500822A68 /* Info.plist */,
+			);
+			path = "Smilometer WatchKit App";
+			sourceTree = "<group>";
+		};
+		5618FF571EA58DC500822A68 /* Smilometer WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5618FF5A1EA58DC500822A68 /* InterfaceController.swift */,
+				5618FF5C1EA58DC500822A68 /* ExtensionDelegate.swift */,
+				5618FF5E1EA58DC500822A68 /* NotificationController.swift */,
+				5618FF601EA58DC500822A68 /* Assets.xcassets */,
+				5618FF621EA58DC500822A68 /* Info.plist */,
+				5618FF581EA58DC500822A68 /* Supporting Files */,
+			);
+			path = "Smilometer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5618FF581EA58DC500822A68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5618FF591EA58DC500822A68 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5618FF1B1EA58DC400822A68 /* Smilometer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5618FF6D1EA58DC500822A68 /* Build configuration list for PBXNativeTarget "Smilometer" */;
+			buildPhases = (
+				5618FF181EA58DC400822A68 /* Sources */,
+				5618FF191EA58DC400822A68 /* Frameworks */,
+				5618FF1A1EA58DC400822A68 /* Resources */,
+				5618FF6C1EA58DC500822A68 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5618FF471EA58DC500822A68 /* PBXTargetDependency */,
+			);
+			name = Smilometer;
+			productName = Smilometer;
+			productReference = 5618FF1C1EA58DC400822A68 /* Smilometer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5618FF2F1EA58DC500822A68 /* SmilometerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5618FF701EA58DC500822A68 /* Build configuration list for PBXNativeTarget "SmilometerTests" */;
+			buildPhases = (
+				5618FF2C1EA58DC500822A68 /* Sources */,
+				5618FF2D1EA58DC500822A68 /* Frameworks */,
+				5618FF2E1EA58DC500822A68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5618FF321EA58DC500822A68 /* PBXTargetDependency */,
+			);
+			name = SmilometerTests;
+			productName = SmilometerTests;
+			productReference = 5618FF301EA58DC500822A68 /* SmilometerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5618FF3A1EA58DC500822A68 /* SmilometerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5618FF731EA58DC500822A68 /* Build configuration list for PBXNativeTarget "SmilometerUITests" */;
+			buildPhases = (
+				5618FF371EA58DC500822A68 /* Sources */,
+				5618FF381EA58DC500822A68 /* Frameworks */,
+				5618FF391EA58DC500822A68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5618FF3D1EA58DC500822A68 /* PBXTargetDependency */,
+			);
+			name = SmilometerUITests;
+			productName = SmilometerUITests;
+			productReference = 5618FF3B1EA58DC500822A68 /* SmilometerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5618FF431EA58DC500822A68 /* Smilometer WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5618FF691EA58DC500822A68 /* Build configuration list for PBXNativeTarget "Smilometer WatchKit App" */;
+			buildPhases = (
+				5618FF421EA58DC500822A68 /* Resources */,
+				5618FF681EA58DC500822A68 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5618FF561EA58DC500822A68 /* PBXTargetDependency */,
+			);
+			name = "Smilometer WatchKit App";
+			productName = "Smilometer WatchKit App";
+			productReference = 5618FF441EA58DC500822A68 /* Smilometer WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5618FF521EA58DC500822A68 /* Smilometer WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5618FF651EA58DC500822A68 /* Build configuration list for PBXNativeTarget "Smilometer WatchKit Extension" */;
+			buildPhases = (
+				5618FF4F1EA58DC500822A68 /* Sources */,
+				5618FF501EA58DC500822A68 /* Frameworks */,
+				5618FF511EA58DC500822A68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smilometer WatchKit Extension";
+			productName = "Smilometer WatchKit Extension";
+			productReference = 5618FF531EA58DC500822A68 /* Smilometer WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5618FF141EA58DC400822A68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Yuhan Dai";
+				TargetAttributes = {
+					5618FF1B1EA58DC400822A68 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					5618FF2F1EA58DC500822A68 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5618FF1B1EA58DC400822A68;
+					};
+					5618FF3A1EA58DC500822A68 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5618FF1B1EA58DC400822A68;
+					};
+					5618FF431EA58DC500822A68 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					5618FF521EA58DC500822A68 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5618FF171EA58DC400822A68 /* Build configuration list for PBXProject "Smilometer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5618FF131EA58DC400822A68;
+			productRefGroup = 5618FF1D1EA58DC400822A68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5618FF1B1EA58DC400822A68 /* Smilometer */,
+				5618FF2F1EA58DC500822A68 /* SmilometerTests */,
+				5618FF3A1EA58DC500822A68 /* SmilometerUITests */,
+				5618FF431EA58DC500822A68 /* Smilometer WatchKit App */,
+				5618FF521EA58DC500822A68 /* Smilometer WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5618FF1A1EA58DC400822A68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5618FF2A1EA58DC500822A68 /* LaunchScreen.storyboard in Resources */,
+				5618FF271EA58DC500822A68 /* Assets.xcassets in Resources */,
+				5618FF251EA58DC500822A68 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5618FF2E1EA58DC500822A68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5618FF391EA58DC500822A68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5618FF421EA58DC500822A68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5618FF4D1EA58DC500822A68 /* Assets.xcassets in Resources */,
+				5618FF4B1EA58DC500822A68 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5618FF511EA58DC500822A68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5618FF611EA58DC500822A68 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5618FF181EA58DC400822A68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5618FF221EA58DC500822A68 /* ViewController.swift in Sources */,
+				5618FF201EA58DC500822A68 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5618FF2C1EA58DC500822A68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5618FF351EA58DC500822A68 /* SmilometerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5618FF371EA58DC500822A68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5618FF401EA58DC500822A68 /* SmilometerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5618FF4F1EA58DC500822A68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5618FF5F1EA58DC500822A68 /* NotificationController.swift in Sources */,
+				5618FF5D1EA58DC500822A68 /* ExtensionDelegate.swift in Sources */,
+				5618FF5B1EA58DC500822A68 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5618FF321EA58DC500822A68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5618FF1B1EA58DC400822A68 /* Smilometer */;
+			targetProxy = 5618FF311EA58DC500822A68 /* PBXContainerItemProxy */;
+		};
+		5618FF3D1EA58DC500822A68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5618FF1B1EA58DC400822A68 /* Smilometer */;
+			targetProxy = 5618FF3C1EA58DC500822A68 /* PBXContainerItemProxy */;
+		};
+		5618FF471EA58DC500822A68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5618FF431EA58DC500822A68 /* Smilometer WatchKit App */;
+			targetProxy = 5618FF461EA58DC500822A68 /* PBXContainerItemProxy */;
+		};
+		5618FF561EA58DC500822A68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5618FF521EA58DC500822A68 /* Smilometer WatchKit Extension */;
+			targetProxy = 5618FF551EA58DC500822A68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5618FF231EA58DC500822A68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5618FF241EA58DC500822A68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5618FF281EA58DC500822A68 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5618FF291EA58DC500822A68 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5618FF491EA58DC500822A68 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5618FF4A1EA58DC500822A68 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5618FF631EA58DC500822A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5618FF641EA58DC500822A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5618FF661EA58DC500822A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Smilometer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yuhandai.Smilometer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		5618FF671EA58DC500822A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Smilometer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yuhandai.Smilometer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		5618FF6A1EA58DC500822A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Smilometer_WatchKit_Extension;
+				INFOPLIST_FILE = "Smilometer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = yuhandai.Smilometer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		5618FF6B1EA58DC500822A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Smilometer_WatchKit_Extension;
+				INFOPLIST_FILE = "Smilometer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = yuhandai.Smilometer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		5618FF6E1EA58DC500822A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Smilometer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yuhandai.Smilometer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5618FF6F1EA58DC500822A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Smilometer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yuhandai.Smilometer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5618FF711EA58DC500822A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmilometerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yuhandai.SmilometerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smilometer.app/Smilometer";
+			};
+			name = Debug;
+		};
+		5618FF721EA58DC500822A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmilometerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yuhandai.SmilometerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smilometer.app/Smilometer";
+			};
+			name = Release;
+		};
+		5618FF741EA58DC500822A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SmilometerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yuhandai.SmilometerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Smilometer;
+			};
+			name = Debug;
+		};
+		5618FF751EA58DC500822A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SmilometerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yuhandai.SmilometerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Smilometer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5618FF171EA58DC400822A68 /* Build configuration list for PBXProject "Smilometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5618FF631EA58DC500822A68 /* Debug */,
+				5618FF641EA58DC500822A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5618FF651EA58DC500822A68 /* Build configuration list for PBXNativeTarget "Smilometer WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5618FF661EA58DC500822A68 /* Debug */,
+				5618FF671EA58DC500822A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5618FF691EA58DC500822A68 /* Build configuration list for PBXNativeTarget "Smilometer WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5618FF6A1EA58DC500822A68 /* Debug */,
+				5618FF6B1EA58DC500822A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5618FF6D1EA58DC500822A68 /* Build configuration list for PBXNativeTarget "Smilometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5618FF6E1EA58DC500822A68 /* Debug */,
+				5618FF6F1EA58DC500822A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5618FF701EA58DC500822A68 /* Build configuration list for PBXNativeTarget "SmilometerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5618FF711EA58DC500822A68 /* Debug */,
+				5618FF721EA58DC500822A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5618FF731EA58DC500822A68 /* Build configuration list for PBXNativeTarget "SmilometerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5618FF741EA58DC500822A68 /* Debug */,
+				5618FF751EA58DC500822A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5618FF141EA58DC400822A68 /* Project object */;
+}
