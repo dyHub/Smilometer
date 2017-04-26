@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Emotion Selection View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="EmotionSelectionViewController" customModule="Smilometer" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,75 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy" translatesAutoresizingMaskIntoConstraints="NO" id="ymW-wJ-alV">
+                                <rect key="frame" x="127" y="220" width="120" height="120"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="2ZH-AA-m1P"/>
+                                    <constraint firstAttribute="height" constant="120" id="Uzv-Qs-kRd"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tired" translatesAutoresizingMaskIntoConstraints="NO" id="kiv-3V-3o1">
+                                <rect key="frame" x="38" y="253" width="60" height="60"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVl-h5-ofi">
+                                <rect key="frame" x="80" y="377" width="215" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.33815667292997376" blue="0.050522125790475214" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="anxious" translatesAutoresizingMaskIntoConstraints="NO" id="QqR-k7-sOB">
+                                <rect key="frame" x="275" y="253" width="60" height="60"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How do you feel ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cH5-c0-WxY">
+                                <rect key="frame" x="60" y="28" width="254" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRc-N6-iiG">
+                                <rect key="frame" x="75" y="493" width="224" height="76"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Select your emotion"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="kiv-3V-3o1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="233" id="1DX-6Y-1vd"/>
+                            <constraint firstItem="DVl-h5-ofi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="1e6-GS-dOt"/>
+                            <constraint firstItem="ymW-wJ-alV" firstAttribute="leading" secondItem="kiv-3V-3o1" secondAttribute="trailing" constant="29" id="550-hc-m9i"/>
+                            <constraint firstItem="DVl-h5-ofi" firstAttribute="top" secondItem="ymW-wJ-alV" secondAttribute="bottom" constant="37" id="9mJ-pq-Xi3"/>
+                            <constraint firstItem="FRc-N6-iiG" firstAttribute="top" secondItem="DVl-h5-ofi" secondAttribute="bottom" constant="78" id="Bkg-9J-EsO"/>
+                            <constraint firstItem="kiv-3V-3o1" firstAttribute="top" secondItem="QqR-k7-sOB" secondAttribute="top" id="I1J-sW-FVB"/>
+                            <constraint firstItem="ymW-wJ-alV" firstAttribute="centerX" secondItem="FRc-N6-iiG" secondAttribute="centerX" id="QTT-vO-Am5"/>
+                            <constraint firstItem="kiv-3V-3o1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="Qd8-Gp-owK"/>
+                            <constraint firstItem="ymW-wJ-alV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="SsR-lr-hLE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QqR-k7-sOB" secondAttribute="trailing" constant="24" id="SvY-SD-3F1"/>
+                            <constraint firstItem="ymW-wJ-alV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aFF-Uf-4jI"/>
+                            <constraint firstItem="ymW-wJ-alV" firstAttribute="centerY" secondItem="QqR-k7-sOB" secondAttribute="centerY" constant="-3" id="cPQ-gT-WB5"/>
+                            <constraint firstItem="ymW-wJ-alV" firstAttribute="centerX" secondItem="DVl-h5-ofi" secondAttribute="centerX" id="d1J-k1-4JB"/>
+                            <constraint firstItem="QqR-k7-sOB" firstAttribute="leading" secondItem="ymW-wJ-alV" secondAttribute="trailing" constant="28" id="ndK-Tg-N2E"/>
+                            <constraint firstItem="ymW-wJ-alV" firstAttribute="centerY" secondItem="kiv-3V-3o1" secondAttribute="centerY" constant="-3" id="sJr-2u-x7x"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentEmotionImage" destination="ymW-wJ-alV" id="iSK-av-mHF"/>
+                        <outlet property="emotionLable" destination="DVl-h5-ofi" id="CKA-Ck-Jdx"/>
+                        <outlet property="leftEmotionImage" destination="kiv-3V-3o1" id="Hst-1Z-KSO"/>
+                        <outlet property="rightEmotionImage" destination="QqR-k7-sOB" id="R82-OD-IMF"/>
+                        <outlet property="saveEmotionButton" destination="FRc-N6-iiG" id="5po-8e-4ld"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="anxious" width="240" height="240"/>
+        <image name="happy" width="240" height="240"/>
+        <image name="tired" width="240" height="240"/>
+    </resources>
 </document>

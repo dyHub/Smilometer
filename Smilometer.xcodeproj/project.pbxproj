@@ -22,6 +22,7 @@
 		5618FF5D1EA58DC500822A68 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618FF5C1EA58DC500822A68 /* ExtensionDelegate.swift */; };
 		5618FF5F1EA58DC500822A68 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618FF5E1EA58DC500822A68 /* NotificationController.swift */; };
 		5618FF611EA58DC500822A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5618FF601EA58DC500822A68 /* Assets.xcassets */; };
+		56E409701EB1552E004DB1CA /* EmotionSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E4096F1EB1552E004DB1CA /* EmotionSelectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		5618FF5E1EA58DC500822A68 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		5618FF601EA58DC500822A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5618FF621EA58DC500822A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56E4096F1EB1552E004DB1CA /* EmotionSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionSelectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			children = (
 				5618FF1F1EA58DC500822A68 /* AppDelegate.swift */,
 				5618FF211EA58DC500822A68 /* ViewController.swift */,
+				56E4096F1EB1552E004DB1CA /* EmotionSelectionViewController.swift */,
 				5618FF231EA58DC500822A68 /* Main.storyboard */,
 				5618FF261EA58DC500822A68 /* Assets.xcassets */,
 				5618FF281EA58DC500822A68 /* LaunchScreen.storyboard */,
@@ -424,6 +427,7 @@
 			files = (
 				5618FF221EA58DC500822A68 /* ViewController.swift in Sources */,
 				5618FF201EA58DC500822A68 /* AppDelegate.swift in Sources */,
+				56E409701EB1552E004DB1CA /* EmotionSelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -764,6 +768,7 @@
 				5618FF671EA58DC500822A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5618FF691EA58DC500822A68 /* Build configuration list for PBXNativeTarget "Smilometer WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -772,6 +777,7 @@
 				5618FF6B1EA58DC500822A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5618FF6D1EA58DC500822A68 /* Build configuration list for PBXNativeTarget "Smilometer" */ = {
 			isa = XCConfigurationList;
@@ -780,6 +786,7 @@
 				5618FF6F1EA58DC500822A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5618FF701EA58DC500822A68 /* Build configuration list for PBXNativeTarget "SmilometerTests" */ = {
 			isa = XCConfigurationList;
@@ -788,6 +795,7 @@
 				5618FF721EA58DC500822A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5618FF731EA58DC500822A68 /* Build configuration list for PBXNativeTarget "SmilometerUITests" */ = {
 			isa = XCConfigurationList;
@@ -796,6 +804,7 @@
 				5618FF751EA58DC500822A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
