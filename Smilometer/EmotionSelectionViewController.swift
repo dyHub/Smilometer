@@ -43,8 +43,9 @@ class EmotionSelectionViewController: UIViewController {
         // setup images for selected emotions
         updateCurrentEmotion()
         
-        // add swipe gesture
+        // add gestures
         addSwipeGestureForEmotionSelection()
+        addTapGestureForCurrentEmotionImage()
         
     }
     
@@ -76,12 +77,8 @@ class EmotionSelectionViewController: UIViewController {
         
     }
     
-    @IBAction func recordCurrentEmotion(_ sender: Any) {
-        debugPrint("clicked")
-        debugPrint(EmotinoNames[emotionIndex])
-        let RecordEmotionVC = storyboard?.instantiateViewController(withIdentifier: "RecordEmotionViewController") as! RecordEmotionViewController
-        RecordEmotionVC.emotionString = EmotinoNames[emotionIndex]
-        self.present(RecordEmotionVC, animated: true, completion: nil)
+    @IBAction func selectYourEmtionClicked(_ sender: Any) {
+        recordCurrentEmotion()
     }
     
     
@@ -91,11 +88,20 @@ class EmotionSelectionViewController: UIViewController {
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
         self.view.addGestureRecognizer(swipeRight)
         
-        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(EmotionSelectionViewController.respondToSwipeGesture(_:)))
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture(_:)))
         swipeLeft.direction = UISwipeGestureRecognizerDirection.left
         self.view.addGestureRecognizer(swipeLeft)
     }
     
+    func addTapGestureForCurrentEmotionImage() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(currentEmotionImageTapped))
+        currentEmotionImage.isUserInteractionEnabled = true
+        currentEmotionImage.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    func currentEmotionImageTapped() {
+        recordCurrentEmotion()
+    }
     
     func updateCurrentEmotion() {
         let totalEmotionCount = EmotinoNames.count
@@ -106,5 +112,15 @@ class EmotionSelectionViewController: UIViewController {
         
         emotionLable.text = EmotinoNames[emotionIndex]
     }
+    
+    func recordCurrentEmotion() {
+        debugPrint("clicked")
+        debugPrint(EmotinoNames[emotionIndex])
+        let RecordEmotionVC = storyboard?.instantiateViewController(withIdentifier: "RecordEmotionViewController") as! RecordEmotionViewController
+        RecordEmotionVC.emotionString = EmotinoNames[emotionIndex]
+        RecordEmotionVC.emotionIndex = emotionIndex
+        self.present(RecordEmotionVC, animated: true, completion: nil)
+    }
+
     
 }

@@ -13,7 +13,7 @@
         <!--Emotion Selection View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="EmotionSelectionViewController" customModule="Smilometer" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EmotionSelectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="EmotionSelectionViewController" customModule="Smilometer" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -54,7 +54,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Select your emotion"/>
                                 <connections>
-                                    <action selector="recordCurrentEmotion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bP5-Jt-Cd4"/>
+                                    <action selector="selectYourEmtionClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FZ2-lw-U7g"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -114,6 +114,37 @@
                                 <color key="textColor" red="1" green="0.33815667290000001" blue="0.050522125789999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJY-OB-LQN">
+                                <rect key="frame" x="65" y="533" width="244" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Reset your emotion">
+                                    <color key="titleColor" red="1" green="0.33815667290000001" blue="0.050522125789999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToSelectEmtion:" destination="cnR-V9-dak" eventType="touchUpInside" id="uis-d0-eLM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfZ-bI-KA4">
+                                <rect key="frame" x="48" y="490" width="283" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Save your emotion"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What made you emotion?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfg-UB-Gjg">
+                                <rect key="frame" x="48" y="272" width="283" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nUq-7r-oGc">
+                                <rect key="frame" x="48" y="352" width="283" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
@@ -126,11 +157,12 @@
                     <connections>
                         <outlet property="emotionImageView" destination="eYU-im-tht" id="HSB-0g-K7N"/>
                         <outlet property="emotionTextLabel" destination="Zk5-sv-zwz" id="hyk-jO-SXM"/>
+                        <outlet property="questionPromotionLabel" destination="Sfg-UB-Gjg" id="bcj-8Z-DJo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Joq-v8-eCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="38"/>
+            <point key="canvasLocation" x="780" y="37.331334332833585"/>
         </scene>
     </scenes>
     <resources>
