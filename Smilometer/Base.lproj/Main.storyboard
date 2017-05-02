@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -53,6 +53,9 @@
                                 <rect key="frame" x="75" y="493" width="224" height="76"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Select your emotion"/>
+                                <connections>
+                                    <action selector="recordCurrentEmotion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bP5-Jt-Cd4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -85,6 +88,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+        <!--Record Emotion View Controller-->
+        <scene sceneID="fd3-m0-mc5">
+            <objects>
+                <viewController storyboardIdentifier="RecordEmotionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cnR-V9-dak" customClass="RecordEmotionViewController" customModule="Smilometer" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fk9-yv-Qwm"/>
+                        <viewControllerLayoutGuide type="bottom" id="nlb-jj-iZ4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IcV-Ad-T7F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eYU-im-tht">
+                                <rect key="frame" x="127" y="69" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="1lc-Td-f4d"/>
+                                    <constraint firstAttribute="height" constant="120" id="bq0-xk-vIi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zk5-sv-zwz">
+                                <rect key="frame" x="80" y="226" width="215" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="1" green="0.33815667290000001" blue="0.050522125789999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="eYU-im-tht" firstAttribute="centerX" secondItem="IcV-Ad-T7F" secondAttribute="centerX" id="2RE-qI-paa"/>
+                            <constraint firstItem="eYU-im-tht" firstAttribute="centerX" secondItem="Zk5-sv-zwz" secondAttribute="centerX" id="Of4-rz-2dr"/>
+                            <constraint firstItem="eYU-im-tht" firstAttribute="top" secondItem="fk9-yv-Qwm" secondAttribute="bottom" constant="49" id="SpU-47-XJE"/>
+                            <constraint firstItem="Zk5-sv-zwz" firstAttribute="top" secondItem="eYU-im-tht" secondAttribute="bottom" constant="37" id="hVY-Yj-VaN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emotionImageView" destination="eYU-im-tht" id="HSB-0g-K7N"/>
+                        <outlet property="emotionTextLabel" destination="Zk5-sv-zwz" id="hyk-jO-SXM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Joq-v8-eCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="38"/>
         </scene>
     </scenes>
     <resources>

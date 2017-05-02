@@ -22,6 +22,7 @@
 		5618FF5D1EA58DC500822A68 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618FF5C1EA58DC500822A68 /* ExtensionDelegate.swift */; };
 		5618FF5F1EA58DC500822A68 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5618FF5E1EA58DC500822A68 /* NotificationController.swift */; };
 		5618FF611EA58DC500822A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5618FF601EA58DC500822A68 /* Assets.xcassets */; };
+		56CC6D751EB80E89006E99DD /* RecordEmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CC6D741EB80E89006E99DD /* RecordEmotionViewController.swift */; };
 		56E409701EB1552E004DB1CA /* EmotionSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E4096F1EB1552E004DB1CA /* EmotionSelectionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +107,7 @@
 		5618FF5E1EA58DC500822A68 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		5618FF601EA58DC500822A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5618FF621EA58DC500822A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56CC6D741EB80E89006E99DD /* RecordEmotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordEmotionViewController.swift; sourceTree = "<group>"; };
 		56E4096F1EB1552E004DB1CA /* EmotionSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionSelectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +173,7 @@
 				5618FF1F1EA58DC500822A68 /* AppDelegate.swift */,
 				5618FF211EA58DC500822A68 /* ViewController.swift */,
 				56E4096F1EB1552E004DB1CA /* EmotionSelectionViewController.swift */,
+				56CC6D741EB80E89006E99DD /* RecordEmotionViewController.swift */,
 				5618FF231EA58DC500822A68 /* Main.storyboard */,
 				5618FF261EA58DC500822A68 /* Assets.xcassets */,
 				5618FF281EA58DC500822A68 /* LaunchScreen.storyboard */,
@@ -428,6 +431,7 @@
 				5618FF221EA58DC500822A68 /* ViewController.swift in Sources */,
 				5618FF201EA58DC500822A68 /* AppDelegate.swift in Sources */,
 				56E409701EB1552E004DB1CA /* EmotionSelectionViewController.swift in Sources */,
+				56CC6D751EB80E89006E99DD /* RecordEmotionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

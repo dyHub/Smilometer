@@ -50,22 +50,12 @@ class EmotionSelectionViewController: UIViewController {
     
 
     // MARK: Actions
-    func addSwipeGestureForEmotionSelection() {
-        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(EmotionSelectionViewController.respondToSwipeGesture(_:)))
-        swipeRight.direction = UISwipeGestureRecognizerDirection.right
-        self.view.addGestureRecognizer(swipeRight)
-        
-        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(EmotionSelectionViewController.respondToSwipeGesture(_:)))
-        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
-        self.view.addGestureRecognizer(swipeLeft)
-    }
-    
     @IBAction func respondToSwipeGesture(_ sender: UISwipeGestureRecognizer) {
         
         switch sender.direction {
         case UISwipeGestureRecognizerDirection.right:
             //write your logic for right swipe
-            print("Swiped right")
+            // debugPrint("Swiped right")
             emotionIndex -= 1
             emotionIndex = emotionIndex < 0 ? EmotinoNames.count-1 : emotionIndex
             break
@@ -73,7 +63,7 @@ class EmotionSelectionViewController: UIViewController {
             
         case UISwipeGestureRecognizerDirection.left:
             //write your logic for left swipe
-            print("Swiped left")
+            // debugPrint("Swiped left")
             emotionIndex += 1
             emotionIndex = emotionIndex >= EmotinoNames.count ? 0 : emotionIndex
             break
@@ -86,6 +76,26 @@ class EmotionSelectionViewController: UIViewController {
         
     }
     
+    @IBAction func recordCurrentEmotion(_ sender: Any) {
+        debugPrint("clicked")
+        debugPrint(EmotinoNames[emotionIndex])
+        let RecordEmotionVC = storyboard?.instantiateViewController(withIdentifier: "RecordEmotionViewController") as! RecordEmotionViewController
+        RecordEmotionVC.emotionString = EmotinoNames[emotionIndex]
+        self.present(RecordEmotionVC, animated: true, completion: nil)
+    }
+    
+    
+    // MARK: helper functions
+    func addSwipeGestureForEmotionSelection() {
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(EmotionSelectionViewController.respondToSwipeGesture(_:)))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
+        self.view.addGestureRecognizer(swipeRight)
+        
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(EmotionSelectionViewController.respondToSwipeGesture(_:)))
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
+        self.view.addGestureRecognizer(swipeLeft)
+    }
+    
     
     func updateCurrentEmotion() {
         let totalEmotionCount = EmotinoNames.count
@@ -96,6 +106,5 @@ class EmotionSelectionViewController: UIViewController {
         
         emotionLable.text = EmotinoNames[emotionIndex]
     }
-    
     
 }
